@@ -32,54 +32,42 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
-
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming.
-
-
-module ex2a(a,b,c,d,f1);
-
-input a,b,c,d;
-
-output f1;
-
-assign f1=((~a&b&d)|(~b&~d)|(a&b&~c));
-
+```
+module func(a,b,c,d,f1); 
+input a,b,c,d; 
+output f1; 
+assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c)); 
 endmodule
 
-module ex2b(w,x,y,z,f2);
-
+module func1(w,x,y,z,f2);
 input w,x,y,z;
-
 output f2;
-
-assign f2=((~y&z)|(x&y)|(w&y));
-
+assign f2=((~y&z)|(w&y)|(x&y));
 endmodule
+```
+/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+
+Developed by: prabha B G RegisterNumber:212224050029*/
 
 
 **RTL realization**
 
-![Screenshot 2025-04-21 190546](https://github.com/user-attachments/assets/f85ea5a2-5cc0-474e-8fb8-422dff5ae141)
+**Output:**
 
-![Screenshot 2025-04-21 190553](https://github.com/user-attachments/assets/1d819669-7c42-4b62-9f87-4d3de6d0e3f7)
-
-
-**Truth table**
-
-![Screenshot 2025-04-21 190512](https://github.com/user-attachments/assets/79f0246d-f1e5-4b5e-8514-419d9a991fdc)
-
-![Screenshot 2025-04-21 190535](https://github.com/user-attachments/assets/e76712ba-59bc-45d1-bd1e-9ceb4a1310cf)
-
+**RTL**
+![Screenshot 2025-04-16 083107](https://github.com/user-attachments/assets/59c669b2-a3a3-4215-a6ea-36891bef1d58)
+![Screenshot 2025-04-16 092843](https://github.com/user-attachments/assets/70b702e6-1831-4ba4-8258-ba952332d6ed)
 
 
 **Timing Diagram**
+![Screenshot 2025-04-16 090419](https://github.com/user-attachments/assets/9292fc19-f074-4620-810b-d12188862b64)
+![Screenshot 2025-04-16 093236](https://github.com/user-attachments/assets/8d23cc7b-7f5d-4073-b818-cd564610f55e)
 
-![Screenshot 2025-04-21 190622](https://github.com/user-attachments/assets/bccba43f-21d7-4092-8711-235598b39175)
-
-![Screenshot 2025-04-21 190635](https://github.com/user-attachments/assets/4e791b71-785f-4d17-bdd6-952111aec792)
 
 
 **Result:**
 
 Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
+
+
 
